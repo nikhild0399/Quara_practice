@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="/style.css"/>
+</head>
+<body>
+    <h1>Here is your POST in detail</h1>
+    <div class = "post">
+    <h2 class="username">POST ID: <%=  post.id%></h2>
+    <h2>USERNAME: <%=  post.username %></h2>
+    <h2 class="content">CONTENT: <%=  post.content %></h2>
+</div>
+<button onclick="nextpage()">HomePage</button>
+</body>
+<script>
+    function nextpage(){
+        window.location.href ="http://localhost:8080/posts" 
+    }
+</script>
+</html>
